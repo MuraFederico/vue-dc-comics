@@ -193,6 +193,7 @@ export default {
         color: white;
         ul {
             margin-bottom: 1rem;
+            margin-right: 1.5rem;
             list-style: none;
         }
         .list-title {
@@ -209,6 +210,16 @@ export default {
     #footer-socials {
         padding: 2rem;
         background-color: #303030;
+        button {
+            padding: .7rem;
+            background-color: transparent;
+            color: white;
+            border: 2px solid #0282f9;
+            border-radius: none;
+            &:hover {
+                cursor: pointer;
+            }
+        }
     }
     .container-socials {
         display: flex;

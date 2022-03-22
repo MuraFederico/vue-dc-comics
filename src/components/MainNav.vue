@@ -50,18 +50,23 @@ export default {
 
 <style lang="scss" scoped>
     .nav-main {
-        padding: 3rem 0;
+        // padding: 3rem 0;
         text-align: center;
         background-color: #0282f9;
         
         li {
             margin: 0 1.5rem;
             display: inline-block;
+            // line-height: 150px;
+
 
             a {
+                padding: 60px 0;
                 display: flex;
                 justify-content: space-evenly;
                 align-items: center;
+
+                // line-height: 150px;
                 color: white;
                 text-decoration: none;
 
