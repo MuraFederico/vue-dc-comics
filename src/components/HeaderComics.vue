@@ -1,7 +1,7 @@
 <template>
   <header>
       <div class="container">
-          <img src="../assets/img/dc-logo.png" alt="DC logo">
+          <img src="assets/img/dc-logo.png" alt="DC logo">
           <ul>
               <li v-for="(link, index) in links" :key="index"><a :href="link.href">{{ link.name }}</a></li>
           </ul>

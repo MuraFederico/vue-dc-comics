@@ -1,12 +1,24 @@
 <template>
     <main>
         <section id="main-content">
-            <h1>inserire contenuto</h1>
+            <div class="container">
+                <h1>inserire contenuto</h1>
+            </div>
         </section>
         <nav class="nav-main">
-            <ul>
-                <li v-for="(navEle, index) in navList" :key="index"><a href=""><img :src="navEle.icon" :alt="navEle.name">{{ navEle.name }}</a></li>
-            </ul>
+            <div class="container">
+                <ul>
+                    <li v-for="(navEle, index) in navList" :key="index">
+                        <a href="">
+                            <div class="container-img">
+                                <img :src="navEle.icon" :alt="navEle.name">
+                            </div>
+                            
+                            {{ navEle.name }}
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </main>
 </template>
@@ -19,23 +31,23 @@ export default {
             navList: [
                 {
                     name: 'DIGITAL COMICS',
-                    icon: '../assets/img/buy-comics-digital-comics.png'
+                    icon: 'assets/img/buy-comics-digital-comics.png'
                 },
                 {
                     name: 'DC MERCHANDISE',
-                    icon: 'buy-comics-merchandise.png'
+                    icon: 'assets/img/buy-comics-merchandise.png'
                 },
                 {
                     name: 'SUBSCRIPTION',
-                    icon: 'buy-comics-shop-locator.png'
+                    icon: 'assets/img/buy-comics-shop-locator.png'
                 },
                 {
                     name: 'COMIC SHOP LOCATOR',
-                    icon: 'buy-comics-subscriptions.png'
+                    icon: 'assets/img/buy-comics-subscriptions.png'
                 },
                 {
                     name: 'DC POWER VISA',
-                    icon: 'buy-dc-power-vis.svg'
+                    icon: 'assets/img/buy-dc-power-visa.svg'
                 },
             ]
         }
@@ -43,6 +55,30 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+    #main-content {
+        background-color: black;
+        color: white;
+    }
 
+    .nav-main {
+        background-color: #0282f9;
+        li {
+            display: inline-block;
+            a {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                color: white;
+                text-decoration: none;
+                .container-img {
+                    height: 50px;
+                    img {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        
+    }
 </style>
