@@ -69,7 +69,23 @@ export default {
     }
 
     li {
+        margin: 0 1rem;
+        // padding: 3rem 0;
         display: inline-block;
+
+        a {
+            display: inline-block;
+
+            line-height: 100px;
+            color: black;
+            text-decoration: none;
+            border-bottom: 5px solid transparent;
+
+            &:hover {
+                color: #0282f9;
+                border-bottom: 5px solid #0282f9;
+            }
+        }
     }
 </style>
     

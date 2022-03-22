@@ -2,18 +2,21 @@
   <div id="app">
     <HeaderComics></HeaderComics>
     <MainComics/>
+    <FooterComics/>
   </div>
 </template>
 
 <script>
 import HeaderComics from './components/HeaderComics.vue'
 import MainComics from "./components/MainComics.vue";
+import FooterComics from "./components/FooterComics.vue";
 
 export default {
   name: 'App',
   components: {
     HeaderComics,
-    MainComics
+    MainComics,
+    FooterComics
   }
 }
 </script>

@@ -62,17 +62,24 @@ export default {
     }
 
     .nav-main {
+        padding: 3rem 0;
+        text-align: center;
         background-color: #0282f9;
+        
         li {
+            margin: 0 1.5rem;
             display: inline-block;
+
             a {
                 display: flex;
                 justify-content: space-evenly;
                 align-items: center;
                 color: white;
                 text-decoration: none;
+
                 .container-img {
                     height: 50px;
+
                     img {
                         height: 100%;
                     }
