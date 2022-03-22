@@ -1,9 +1,9 @@
 <template>
   <header>
       <div class="container">
-          <img src="" alt="">
+          <img src="../assets/img/dc-logo.png" alt="DC logo">
           <ul>
-              <li v-for="(link, index) in links" key="index"><a :href="link.href">{{ link.name }}</a></li>
+              <li v-for="(link, index) in links" :key="index"><a :href="link.href">{{ link.name }}</a></li>
           </ul>
       </div>
   </header>
@@ -61,6 +61,15 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;       
+    }
 
+    li {
+        display: inline-block;
+    }
 </style>
+    
