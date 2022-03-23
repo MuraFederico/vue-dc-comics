@@ -204,6 +204,9 @@ export default {
         a {
             color: gray;
             text-decoration: none;
+            &:hover {
+                color: white;
+            }
         }
     }
     .container-logo {
