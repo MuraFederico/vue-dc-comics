@@ -13,10 +13,10 @@
                 </div>
                 
                 <div class="container-cards" :class="{'expand': expand}">
-                <CardComic v-for="comic in arrComics" :key="comic.series"
-                :thumb="comic.thumb"
-                :series="comic.series" 
-                />
+                    <CardComic v-for="comic in arrComics" :key="comic.series"
+                    :thumb="comic.thumb"
+                    :series="comic.series" 
+                    />
                 </div>
 
                 <button @click="expand = !expand" class="btn-expand">LOAD MORE</button>
