@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header :class="(fixed == true) ? 'nav-down' : 'nav-up'">
       <div class="container">
           <img src="assets/img/dc-logo.png" alt="DC logo">
           <ul>
@@ -57,18 +57,36 @@ export default {
                 },
             ]
         }
+    },
+    props: {
+        fixed: Boolean,
     }
 }
 </script>
 
 <style lang="scss" scoped>
 @import "../../public/assets/styles/variables";
-
+    header{
+        background-color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        transition: transform .5s;
+        &.nav-up {
+            transform: translateY(-300px);
+        }
+        &.nav-down{
+            transform: translateY(0);
+        }
+    }  
     .container {
         display: flex;
         justify-content: space-between;
-        align-items: center;       
+        align-items: center;     
     }
+
 
     li {
         margin: 0 1rem;

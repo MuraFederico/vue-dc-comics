@@ -1,6 +1,8 @@
 <template>
-  <div id="app">
-    <HeaderComics></HeaderComics>
+  <div @wheel="toggleFixed" id="app">
+    <HeaderComics
+    :fixed="headerComics.fixed"
+    />
     <MainComics/>
     <FooterComics/>
   </div>
@@ -17,7 +19,21 @@ export default {
     HeaderComics,
     MainComics,
     FooterComics
+  },
+  data() {
+    return {
+      headerComics: {
+        fixed: false
+      }
+    }
+  },
+  methods: {
+    toggleFixed(event) {
+      event.deltaY < 0 ? this.headerComics.fixed = true : this.headerComics.fixed = false;
+      // console.log(this.headerComics.fixed)
+    }
   }
+
 }
 </script>
 
