@@ -18,7 +18,7 @@ export default {
 <style lang="scss" scoped>
     .card {
         flex-basis: calc(100% / 6 - 1rem);
-        margin: 1.5rem 0;
+        margin: 1.5rem .5rem;
         display: flex;
         flex-direction: column;
         img {

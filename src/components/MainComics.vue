@@ -22,7 +22,7 @@
         </section>
 
         <MainNav/>
-        
+
     </main>
 </template>
 
@@ -135,7 +135,7 @@ export default {
         position: relative;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: center;
     }
     .current-series {
         padding: .5rem 1.5rem;
@@ -146,8 +146,10 @@ export default {
     }
     .btn-expand {
         width: 150px;
-        margin: 0 auto;
+        margin: 0 calc((100% - 150px) / 2);
         padding: .5rem 2rem;
+        align-self: center;
+
         background-color: #0282f9;
         border: none;
         color: white;
