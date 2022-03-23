@@ -49,10 +49,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../public/assets/styles/variables";
+
     .nav-main {
         // padding: 3rem 0;
         text-align: center;
-        background-color: #0282f9;
+        background-color: $primary_color;
         
         li {
             margin: 0 1.5rem;

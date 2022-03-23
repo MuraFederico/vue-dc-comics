@@ -193,6 +193,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../public/assets/styles/variables";
+
     #main-content {
         // text-align: center;
         background-color: #1c1c1c;
@@ -226,7 +228,7 @@ export default {
         position: absolute;
         top: -22px;
         left: 0;
-        background-color: #0282f9;
+        background-color: $primary_color;
     }
     .btn-expand {
         width: 150px;
@@ -234,7 +236,7 @@ export default {
         padding: .5rem 2rem;
         align-self: center;
 
-        background-color: #0282f9;
+        background-color: $primary_color;
         border: none;
         color: white;
         &:hover {

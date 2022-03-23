@@ -62,6 +62,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../public/assets/styles/variables";
+
     .container {
         display: flex;
         justify-content: space-between;
@@ -83,7 +85,7 @@ export default {
 
             &:hover {
                 color: #0282f9;
-                border-bottom: 5px solid #0282f9;
+                border-bottom: 5px solid $primary_color;
             }
         }
     }

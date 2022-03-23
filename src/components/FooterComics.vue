@@ -175,6 +175,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../public/assets/styles/variables";
+
     .container {
         display: flex;
         justify-content: space-between;
@@ -214,7 +216,7 @@ export default {
             padding: .7rem;
             background-color: transparent;
             color: white;
-            border: 2px solid #0282f9;
+            border: 2px solid $primary_color;
             border-radius: none;
             &:hover {
                 cursor: pointer;
@@ -226,7 +228,7 @@ export default {
 
         h2 {
             margin: 0 .7rem;
-            color: #0783f9;
+            color: $primary_color;
         }
         a {
             margin: 0 .5rem;
