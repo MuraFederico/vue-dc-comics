@@ -71,10 +71,12 @@ export default {
                 text-decoration: none;
 
                 .container-img {
+                    margin-right: .5rem;
                     height: 50px;
-
+                    width: 40px;
                     img {
                         height: 100%;
+                        width: 100%;
                     }
                 }
             }
