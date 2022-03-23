@@ -17,6 +17,7 @@ export default {
 
 <style lang="scss" scoped>
     .card {
+        height: 415px;
         flex-basis: calc(100% / 6 - 1rem);
         margin: 1.5rem .5rem;
         display: flex;
